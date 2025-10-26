@@ -4,7 +4,7 @@ import os
 import io
 import streamlit as st
 from typing import Union
-
+import pandas as pd
 
 @st.cache_data
 def load_data_from_csv(file_path_or_bytes: Union[str, bytes, None] = None):
@@ -264,3 +264,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
